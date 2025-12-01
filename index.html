@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +15,74 @@
             background-color: #f9f9f9;
             color: #333;
         }
-        h1 {
+
+        h1,
+        h2 {
             text-align: center;
+            color: #2c3e50;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .developer-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
         }
     </style>
 </head>
+
 <body>
-    <h1>LockNote Privacy Policy</h1>
-    <p>LockNote is an offline encrypted notepad. We do not collect or store any personal data from users.</p>
-    <p>No data is sent to the internet or any external servers.</p>
-    <p>Users have no data rights to manage, because the app does not process any personal information.</p>
-    <p>If you have any privacy-related questions, you can contact us via email: <strong>ks131524@stud.ur.edu.pl</strong></p>
+    <div class="developer-info">
+        <p>Developer: korratus2003 | App: LockNote</p>
+    </div>
+
+    <!-- English Section -->
+    <div class="section" lang="en">
+        <h1>LockNote Privacy Policy</h1>
+        <p>LockNote is an offline encrypted notepad. We do not collect or store any personal data from users.</p>
+        <p>No data is sent to the internet or any external servers.</p>
+        <p>Users have no data rights to manage, because the app does not process any personal information.</p>
+        <p>If you have any privacy-related questions, you can contact us via email:
+            <strong>szyszlakkonrad@gmail.com</strong>
+        </p>
+    </div>
+
+    <!-- Polish Section -->
+    <div class="section" lang="pl">
+        <h1>Polityka Prywatności LockNote</h1>
+        <p>LockNote to szyfrowany notatnik działający w trybie offline. Nie zbieramy ani nie przechowujemy żadnych
+            danych osobowych użytkowników.</p>
+        <p>Żadne dane nie są wysyłane do Internetu ani na żadne zewnętrzne serwery.</p>
+        <p>Użytkownicy nie mają praw do zarządzania danymi, ponieważ aplikacja nie przetwarza żadnych danych osobowych.
+        </p>
+        <p>Jeśli masz jakiekolwiek pytania dotyczące prywatności, możesz skontaktować się z nami pod adresem e-mail:
+            <strong>szyszlakkonrad@gmail.com</strong>
+        </p>
+    </div>
+
+    <!-- Chinese Section -->
+    <div class="section" lang="zh">
+        <h1>LockNote 隐私政策</h1>
+        <p>LockNote 是一款离线加密记事本。我们不会收集或存储用户的任何个人数据。</p>
+        <p>没有任何数据会被发送到互联网或任何外部服务器。</p>
+        <p>由于应用程序不处理任何个人信息，因此用户无需管理任何数据权利。</p>
+        <p>如果您有任何与隐私相关的问题，可以通过电子邮件联系我们：<strong>szyszlakkonrad@gmail.com</strong></p>
+    </div>
 </body>
+
 </html>
