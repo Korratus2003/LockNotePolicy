@@ -35,7 +35,7 @@
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease;
+            display: block;
         }
 
         .section:hover {
@@ -78,7 +78,6 @@
     </div>
 
     <div id="content-container">
-        <!-- English Section -->
         <div class="section" lang="en" id="en-section">
             <h1>LockNote Privacy Policy</h1>
             <p><strong>Last updated:</strong> December 02, 2025</p>
@@ -103,7 +102,6 @@
             <p>If you have any questions about this privacy policy, please contact us at: <span class="contact-email">szyszlakkonrad@gmail.com</span></p>
         </div>
 
-        <!-- Polish Section -->
         <div class="section" lang="pl" id="pl-section">
             <h1>Polityka Prywatności LockNote</h1>
             <p><strong>Ostatnia aktualizacja:</strong> 02 Grudnia 2025</p>
@@ -128,7 +126,6 @@
             <p>Jeśli masz jakiekolwiek pytania dotyczące tej polityki prywatności, skontaktuj się z nami pod adresem: <span class="contact-email">szyszlakkonrad@gmail.com</span></p>
         </div>
 
-        <!-- Chinese Section -->
         <div class="section" lang="zh" id="zh-section">
             <h1>LockNote 隐私政策</h1>
             <p><strong>最后更新：</strong> 2025年12月02日</p>
@@ -156,22 +153,23 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const userLang = navigator.language || navigator.userLanguage;
+            const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
             const container = document.getElementById('content-container');
             const enSection = document.getElementById('en-section');
             const plSection = document.getElementById('pl-section');
             const zhSection = document.getElementById('zh-section');
 
-            console.log("Detected language:", userLang);
-
             if (userLang.startsWith('pl')) {
-                // Move Polish to top
+                container.prepend(zhSection);
+                container.prepend(enSection);
                 container.prepend(plSection);
             } else if (userLang.startsWith('zh')) {
-                // Move Chinese to top
+                container.prepend(plSection);
+                container.prepend(enSection);
                 container.prepend(zhSection);
             } else {
-                // Default is English, ensure it's at top (though HTML order handles this, explicit is safer if we add more logic)
+                container.prepend(zhSection);
+                container.prepend(plSection);
                 container.prepend(enSection);
             }
         });
