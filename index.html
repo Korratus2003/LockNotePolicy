@@ -7,41 +7,67 @@
     <title>LockNote Privacy Policy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 40px 20px;
             line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f5f7fa;
             color: #333;
         }
 
-        h1,
-        h2 {
+        h1 {
             text-align: center;
             color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
         }
 
         .section {
             margin-bottom: 40px;
-            padding: 20px;
+            padding: 30px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
 
         .developer-info {
             text-align: center;
-            margin-bottom: 30px;
-            font-weight: bold;
-            color: #555;
+            margin-bottom: 40px;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            color: #2980b9;
+            font-weight: 600;
         }
 
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ddd;
-            margin: 30px 0;
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        .contact-email {
+            color: #2980b9;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -51,38 +77,105 @@
         <p>Developer: Konrad Szyszlak (korratus2003) | App: LockNote</p>
     </div>
 
-    <!-- English Section -->
-    <div class="section" lang="en">
-        <h1>LockNote Privacy Policy</h1>
-        <p>LockNote is an offline encrypted notepad. We do not collect or store any personal data from users.</p>
-        <p>No data is sent to the internet or any external servers.</p>
-        <p>Users have no data rights to manage, because the app does not process any personal information.</p>
-        <p>If you have any privacy-related questions, you can contact us via email:
-            <strong>szyszlakkonrad@gmail.com</strong>
-        </p>
+    <div id="content-container">
+        <!-- English Section -->
+        <div class="section" lang="en" id="en-section">
+            <h1>LockNote Privacy Policy</h1>
+            <p><strong>Last updated:</strong> December 02, 2025</p>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to LockNote. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our application and tell you about your privacy rights and how the law protects you.</p>
+
+            <h2>2. Data Collection</h2>
+            <p>LockNote is designed to be a private, secure note-taking application. We do not collect, store, or transmit any of your personal data to external servers. All data, including notes, tasks, and biometric information, is stored locally on your device.</p>
+
+            <h2>3. Biometric Data</h2>
+            <p>We use your device's biometric authentication features (fingerprint, face unlock) to secure your notes. We do not have access to your raw biometric data. Authentication is handled entirely by the Android system.</p>
+
+            <h2>4. Permissions</h2>
+            <ul>
+                <li><strong>Camera/Audio:</strong> Used only when you explicitly choose to add photos or voice memos to your notes.</li>
+                <li><strong>Storage:</strong> Used to save your notes and media files locally.</li>
+                <li><strong>Notifications/Alarms:</strong> Used to send you reminders for your notes and tasks.</li>
+            </ul>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions about this privacy policy, please contact us at: <span class="contact-email">szyszlakkonrad@gmail.com</span></p>
+        </div>
+
+        <!-- Polish Section -->
+        <div class="section" lang="pl" id="pl-section">
+            <h1>Polityka Prywatności LockNote</h1>
+            <p><strong>Ostatnia aktualizacja:</strong> 02 Grudnia 2025</p>
+
+            <h2>1. Wstęp</h2>
+            <p>Witamy w LockNote. Szanujemy Twoją prywatność i jesteśmy zobowiązani do ochrony Twoich danych osobowych. Ta polityka prywatności informuje, w jaki sposób dbamy o Twoje dane osobowe podczas korzystania z naszej aplikacji, oraz o Twoich prawach do prywatności i ochronie prawnej.</p>
+
+            <h2>2. Gromadzenie Danych</h2>
+            <p>LockNote został zaprojektowany jako prywatna, bezpieczna aplikacja do robienia notatek. Nie zbieramy, nie przechowujemy ani nie przesyłamy żadnych Twoich danych osobowych na zewnętrzne serwery. Wszystkie dane, w tym notatki, zadania i informacje biometryczne, są przechowywane lokalnie na Twoim urządzeniu.</p>
+
+            <h2>3. Dane Biometryczne</h2>
+            <p>Używamy funkcji uwierzytelniania biometrycznego Twojego urządzenia (odcisk palca, odblokowanie twarzą) do zabezpieczenia Twoich notatek. Nie mamy dostępu do Twoich surowych danych biometrycznych. Uwierzytelnianie jest w całości obsługiwane przez system Android.</p>
+
+            <h2>4. Uprawnienia</h2>
+            <ul>
+                <li><strong>Aparat/Dźwięk:</strong> Używane tylko wtedy, gdy wyraźnie zdecydujesz się dodać zdjęcia lub notatki głosowe do swoich notatek.</li>
+                <li><strong>Pamięć:</strong> Używana do lokalnego zapisywania notatek i plików multimedialnych.</li>
+                <li><strong>Powiadomienia/Alarmy:</strong> Używane do wysyłania przypomnień o notatkach i zadaniach.</li>
+            </ul>
+
+            <h2>5. Kontakt</h2>
+            <p>Jeśli masz jakiekolwiek pytania dotyczące tej polityki prywatności, skontaktuj się z nami pod adresem: <span class="contact-email">szyszlakkonrad@gmail.com</span></p>
+        </div>
+
+        <!-- Chinese Section -->
+        <div class="section" lang="zh" id="zh-section">
+            <h1>LockNote 隐私政策</h1>
+            <p><strong>最后更新：</strong> 2025年12月02日</p>
+
+            <h2>1. 简介</h2>
+            <p>欢迎使用 LockNote。我们尊重您的隐私，并致力于保护您的个人数据。本隐私政策将告知您我们在您访问我们的应用程序时如何处理您的个人数据，并告知您您的隐私权以及法律如何保护您。</p>
+
+            <h2>2. 数据收集</h2>
+            <p>LockNote 旨在成为一款私密、安全的笔记应用程序。我们不会收集、存储或将您的任何个人数据传输到外部服务器。所有数据（包括笔记、任务和生物识别信息）均存储在您的本地设备上。</p>
+
+            <h2>3. 生物识别数据</h2>
+            <p>我们使用您设备的生物识别认证功能（指纹、面部解锁）来保护您的笔记。我们无法访问您的原始生物识别数据。认证完全由 Android 系统处理。</p>
+
+            <h2>4. 权限</h2>
+            <ul>
+                <li><strong>相机/音频：</strong> 仅在您明确选择向笔记添加照片或语音备忘录时使用。</li>
+                <li><strong>存储：</strong> 用于在本地保存您的笔记和媒体文件。</li>
+                <li><strong>通知/闹钟：</strong> 用于向您发送笔记和任务提醒。</li>
+            </ul>
+
+            <h2>5. 联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：<span class="contact-email">szyszlakkonrad@gmail.com</span></p>
+        </div>
     </div>
 
-    <!-- Polish Section -->
-    <div class="section" lang="pl">
-        <h1>Polityka Prywatności LockNote</h1>
-        <p>LockNote to szyfrowany notatnik działający w trybie offline. Nie zbieramy ani nie przechowujemy żadnych
-            danych osobowych użytkowników.</p>
-        <p>Żadne dane nie są wysyłane do Internetu ani na żadne zewnętrzne serwery.</p>
-        <p>Użytkownicy nie mają praw do zarządzania danymi, ponieważ aplikacja nie przetwarza żadnych danych osobowych.
-        </p>
-        <p>Jeśli masz jakiekolwiek pytania dotyczące prywatności, możesz skontaktować się z nami pod adresem e-mail:
-            <strong>szyszlakkonrad@gmail.com</strong>
-        </p>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const container = document.getElementById('content-container');
+            const enSection = document.getElementById('en-section');
+            const plSection = document.getElementById('pl-section');
+            const zhSection = document.getElementById('zh-section');
 
-    <!-- Chinese Section -->
-    <div class="section" lang="zh">
-        <h1>LockNote 隐私政策</h1>
-        <p>LockNote 是一款离线加密记事本。我们不会收集或存储用户的任何个人数据。</p>
-        <p>没有任何数据会被发送到互联网或任何外部服务器。</p>
-        <p>由于应用程序不处理任何个人信息，因此用户无需管理任何数据权利。</p>
-        <p>如果您有任何与隐私相关的问题，可以通过电子邮件联系我们：<strong>szyszlakkonrad@gmail.com</strong></p>
-    </div>
+            console.log("Detected language:", userLang);
+
+            if (userLang.startsWith('pl')) {
+                // Move Polish to top
+                container.prepend(plSection);
+            } else if (userLang.startsWith('zh')) {
+                // Move Chinese to top
+                container.prepend(zhSection);
+            } else {
+                // Default is English, ensure it's at top (though HTML order handles this, explicit is safer if we add more logic)
+                container.prepend(enSection);
+            }
+        });
+    </script>
 </body>
 
 </html>
